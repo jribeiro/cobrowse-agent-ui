@@ -19,8 +19,9 @@ import CobrowseProviderComponent, { useCobrowse as useCobrowseHook } from '@/com
 import useSessionHook from '@/hooks/useSession'
 import useAccountHook from '@/hooks/useAccount'
 import i18nInstance, { bindI18n as bindI18nHelper } from '@/i18n'
-export { useAccounts } from '@/hooks/useAccounts'
-export { useSDKMutation } from '@/hooks/useSDKMutation'
+export * from '@/hooks/accounts'
+export { useUpdate } from '@/hooks/useUpdate'
+export { useMutation } from '@/hooks/useMutation'
 
 export type { CodeEntryProps } from '@/components/CodeEntry'
 export type { ButtonProps } from '@/components/Button'
