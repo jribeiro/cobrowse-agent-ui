@@ -19,8 +19,6 @@ import CobrowseProviderComponent, { useCobrowse as useCobrowseHook } from '@/com
 import useSessionHook from '@/hooks/useSession'
 import useAccountHook from '@/hooks/useAccount'
 import i18nInstance, { bindI18n as bindI18nHelper } from '@/i18n'
-export * from '@/hooks/accounts'
-export { useUpdate } from '@/hooks/useUpdate'
 export { useMutation } from '@/hooks/useMutation'
 
 export type { CodeEntryProps } from '@/components/CodeEntry'
@@ -50,6 +48,11 @@ export type {
 } from '@/components/Rating'
 export type { SessionRatingProps, SessionRatingResult } from '@/components/Rating/SessionRating'
 export type { CobrowseProviderProps } from '@/components/CobrowseProvider'
+
+export { useCreateAccount } from '@/modules/accounts/useCreateAccount'
+export { useDestroyAccount } from '@/modules/accounts/useDestroyAccount'
+export { useListAccounts } from '@/modules/accounts/useListAccounts'
+export { useUpdateAccount } from '@/modules/accounts/useUpdateAccount'
 
 export const CodeEntry = CodeEntryComponent
 export const Button = ButtonComponent
